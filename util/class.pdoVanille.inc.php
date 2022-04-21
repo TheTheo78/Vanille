@@ -25,7 +25,7 @@ class PdoVanille
 	 **/
 	private function __construct()
 	{
-		PdoVanille::$monPdo = new PDO('mysql:host=localhost;dbname=vanille', 'Rudy', 'Azerty31!');
+		PdoVanille::$monPdo = new PDO('mysql:host=localhost;dbname=vanille', 'root', '');
 		PdoVanille::$monPdo->query("SET CHARACTER SET utf8");
 	}
 	public function _destruct()
